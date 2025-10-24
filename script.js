@@ -1,7 +1,7 @@
 const games = [
   {
   name: "Slope",
-  path: "games/Slope/index.html",
+  path: "/wordle/index.html",
   icon: "🐤",
   description:
     "Flap your wings, dodge pipes, and see how far you can go without crashing! A remake of the classic endless flyer.",
