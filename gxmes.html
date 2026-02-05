@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
 <title>HEAVENLY Games 🎮</title>
 <style>
 /* General Styles */
@@ -86,6 +84,50 @@ h1 { font-size:2.5rem; color:#00ffc8; text-shadow:0 0 10px #00ffc8; }
     color:white;
     min-width:200px;
 }
+/*.game-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));*/
+/*  gap: 15px;*/
+}
+
+/* Each section wrapper */
+.game-section {
+  grid-column: 1 / -1; /* Make heading and barrier span full width */
+}
+
+/* Section title */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 cards per row */
+  gap: 15px;
+}
+
+/* Make headings span all columns */
+.section-title-wrapper {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px #000;
+  margin: 0;
+}
+
+/* Barrier styling */
+.section-barrier {
+  height: 4px;
+  width: 80%;
+  background: linear-gradient(to right, #ff6600, #ffcc00);
+  margin: 8px auto 20px auto;
+  border-radius: 2px;
+}
+
 
 .game-card:hover { transform:translateY(-5px); box-shadow:0 0 15px rgba(0,255,200,0.3); }
 
@@ -226,6 +268,24 @@ footer { margin:30px 0; opacity:0.6; font-size:0.9rem; }
     font-weight: bold;
 }
 
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 40px 0 10px 0;
+    text-align: center;
+    color: #ffcc00; /* or your theme color */
+    text-shadow: 1px 1px 3px #000;
+}
+
+.section-barrier {
+    height: 4px;
+    width: 80%;
+    background: linear-gradient(to right, #ff6600, #ffcc00);
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+
 </style>
 
 </head>
@@ -241,185 +301,1024 @@ footer { margin:30px 0; opacity:0.6; font-size:0.9rem; }
 
 <!-- Games container -->
 <div id="anel">
+    <br>
+        <br>
+    <br>
+
 <h1>Heavenly Games 🎮</h1>
-<input type="text" id="searchBar" placeholder="Search games..." />
-<section class="game-grid">
-    <a class="game-card" data-url="https://stickslash.wasmer.app/stick/" >Stickslasher</a> 
-    <a class="game-card"
+<br>
+<h2>Heavenly Games is a game website with only our members favorite games.</h2>
+<br>
+<h3>IF U END UP NEEDING TO PRESS ESC FOR A GAME LIKE LIQUID SOCCER, PLEASE USE THE FULLSCREEN BUTTON TO KEEP OUR PAGE SECURE</h3>
+
+<h4>PLEASE SEARCH IF YOU HAVE TROUBLE LOCATING UR GAME</h4>
+<input type="text" id="searchBar" placeholder="Search games...">
+
+<!--<a class="game-card" data-url="https://spacewave.wasmer.app/space-waves/">Spacewaves</a>-->
+
+<div class="section-title-wrapper">
+    <h2 class="section-title">New Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+  <section class="game-grid">
+  <a class="game-card"
    data-url="https://spacewave.wasmer.app/space-waves/"
    data-img="https://spacewavesgame.io/data/image/game/space-waves/space-waves.png">
    <span>Spacewaves</span>
 </a>
 
-<!--<a class="game-card" data-url="https://spacewave.wasmer.app/space-waves/">Spacewaves</a> -->
-<a class="game-card" data-url="https://escape-road-2.wasmer.app/">Escaperoad2</a> 
-<a class="game-card" data-url="https://supersoccerl.deno.dev">Super liquid soccer</a>
- <a class="game-card" data-url="newgames/candycrush/">Candy Crush</a>
-    <a class="game-card" data-url="1v1lol/">1v1lol</a>
-    <a class="game-card" data-url="tap/">Tap</a>
-    <a class="game-card" data-url="newgames/stackCode/">Stack</a>
-    <a class="game-card" data-url="newgames/2048code/">2048</a>
-    <a class="game-card" data-url="newgames/fluidsim/">Fluidsim</a>
-    <a class="game-card" data-url="https://heavenlygames5.deno.dev/html/Drive%20Mad%20200%20Levels/">Drive Mad</a>
-    <a class="game-card" data-url="newgames/spacebarclicker/">Spacebar Clicker</a>
-    <a class="game-card" data-url="HexGL/">HexGL</a>
-    <a class="game-card" data-url="OfflineParadise/">Offline Paradise</a>
-    <a class="game-card" data-url="Stickman-Survival/">Stickman Survival</a>
-    <a class="game-card" data-url="angry-birds/">Angry Birds</a>
-    <a class="game-card" data-url="backflip-dive-3d/">Backflip Dive</a>
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/top%20speed%20racing%203d/"
+   data-img="https://codehs.com/uploads/45002290543bed755896c0aec871e913">
+   <span>Top Speed Racing 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://escape-road-2.wasmer.app/"
+   data-img="https://codehs.com/uploads/2691ec136bae85b251fe8ec2c1320d07">
+   <span>Escaperoad 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://supersoccerl.deno.dev"
+   data-img="https://codehs.com/uploads/f4a3c23bd848b7f8d4b0809fd967ddd5">
+   <span>Super Liquid Soccer</span>
+</a>
+
+<a class="game-card"
+   data-url="https://stickslash.wasmer.app/stick/"
+   data-img="https://codehs.com/uploads/ed85cef3377a51b1876fe34baf2a3aba">
+   <span>Stick Slasher</span>
+</a>
+
+<a class="game-card"
+   data-url="https://sigma-masked-spec-43.deno.dev/"
+   data-img="https://codehs.com/uploads/45fc718f135c729c1f24c40d907653e9">
+   <span>Masked Special Forces</span>
+</a>
+
+<a class="game-card" data-url="https://rocketsoccer2.deno.dev/"  
+data-img="https://codehs.com/uploads/6a1eb423ebe71025e3124e883fad226a">
+    <span>Rocketleague (working!)</span>
+    </a>
+<!---->
+
+
+<div class="section-title-wrapper">
+    <h2 class="section-title">Car Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+
+  <!--cargame-->
+    <a class="game-card"
+   data-url="https://heavenlygames5.deno.dev/html/Drive%20Mad%20200%20Levels/"
+   data-img="https://codehs.com/uploads/0fc84cd7a737230739fbeaa8a6d59d77">
+   <span>Drive Mad</span>
+</a>
+
+<a class="game-card"
+   data-url="cars-simulator/"
+   data-img="https://codehs.com/uploads/45a206f030bb470c276b4a977cc07376">
+   <span>Cars Simulator</span>
+</a>
+
+<a class="game-card"
+   data-url="scrapmetal/"
+   data-img="https://codehs.com/uploads/f19f5321facec1251e63703d24024e68">
+   <span>Scrapmetal</span>
+</a>
+
+<a class="game-card"
+   data-url="https://www.stat2games.sites.grinnell.edu/games/raceradvanced22.html"
+   data-img="https://codehs.com/uploads/46584fba95b557da9819044b3917cfcd">
+   <span>Racer</span>
+</a>
+
+<a class="game-card"
+   data-url="https://www.stat2games.sites.grinnell.edu/games/racekart.html"
+   data-img="https://codehs.com/uploads/7d32104e58bea3415913292691f4fd67">
+   <span>Race Kart</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlygames5.deno.dev/html/City%20Car%20Driving%20Stunt%20Master/"
+   data-img="https://codehs.com/uploads/3895a6b2b33da1ba82697976b653d596">
+   <span>Stunt Driving</span>
+</a>
+
+<a class="game-card"
+   data-url="/CARGAME/"
+   data-img="https://codehs.com/uploads/2e362c88b1a458d29704d72bc43fb4e0">
+   <span>Car Game</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/new%20polytrack/"
+   data-img="https://codehs.com/uploads/e52205cac4f2374337dcd990f4e7700e">
+   <span>Poly Track</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/top%20speed%203d/"
+   data-img="https://codehs.com/uploads/96062f90e1a6137d4502aec739735c7e">
+   <span>Top Speed 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/2drocketleague/"
+   data-img="https://codehs.com/uploads/9aaf25fb8bc438a1218693d8fd6ca5cd">
+   <span>2D Rocket League</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/drifthunters/"
+   data-img="https://codehs.com/uploads/a75ec16ae79ca8c45017624f72aedda8">
+   <span>Drift Hunters</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/russiancardriver/"
+   data-img="https://codehs.com/uploads/a6ca9d5910d9f420f2fab86394a1a90b">
+   <span>Russian Car Driver</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/moto/"
+   data-img="https://codehs.com/uploads/032943cc8fd898992056546bb78ad2b6">
+   <span>Moto X3M</span>
+</a>
+
+<a class="game-card"
+   data-url="moto-x3m-2/"
+   data-img="https://codehs.com/uploads/4f3d0d04db4d01461c05cb5f0ec0460a">
+   <span>Moto X3M 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/motox3m-pool/"
+   data-img="https://codehs.com/uploads/6fbfb9b0451f795cfe34aefbb24f0dc2">
+   <span>Moto X3M Pool</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/motox3m-spooky/"
+   data-img="https://codehs.com/uploads/e3f9b0b555560ef62f79c8c63958f520">
+   <span>Moto X3M Spooky</span>
+</a>
+
+<a class="game-card"
+   data-url="swerve/"
+   data-img="https://codehs.com/uploads/471327b2654c79c5480736ceacd77923">
+   <span>Swerve</span>
+</a>
+
+<div class="section-title-wrapper">
+    <h2 class="section-title">Sports Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+
+    <!--sports-->
+    <a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/footballbros/"
+   data-img="https://codehs.com/uploads/6fa4b37158bdc0f594be6cfa481d8739">
+   <span>Football Bros</span>
+</a>
+
+<a class="game-card"
+   data-url="https://a6936-19417927.cluster7.canvas-user-content.com/courses/6936~1010708/files/6936~19417927/course%20files/index.html%20tre?download=1&inline=1"
+   data-img="https://codehs.com/uploads/040c3010df8c7c8f7616ca06ff3f7f96">
+   <span>Retro Bowl</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/soccer%20skills%20euro%20cup/"
+   data-img="https://codehs.com/uploads/ed86a9bbb07decf59ab3aa92e6396914">
+   <span>Soccer Skills Euro Cup</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/basketbros/"
+   data-img="https://codehs.com/uploads/33f44d5a99eaca31368a1148ff15b299">
+   <span>BasketBros</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/basket%20legend%202020/"
+   data-img="https://codehs.com/uploads/d3733c34f175a333e4b2feb794a7bdbd">
+   <span>Basketball Legends 2020</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/cannon%20basketball/"
+   data-img="https://codehs.com/uploads/0635b294c3968d6b01db88633d9ce536">
+   <span>Cannon Basketball</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/1on1soccer/"
+   data-img="https://codehs.com/uploads/28e4f574d0cdd8b0823eea1e5a7162fb">
+   <span>1 on 1 Soccer</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/retrobowlcollege/"
+   data-img="https://codehs.com/uploads/ed3bc92d241184f2d01fbd0e3dc79e06">
+   <span>Retro Bowl College</span>
+</a>
+
+<a class="game-card"
+   data-url="golf/"
+   data-img="https://codehs.com/uploads/85af34f72446a3bb3d8d5fec32f218a9">
+   <span>Golf</span>
+</a>
+
+<a class="game-card"
+   data-url="edge-surf/"
+   data-img="https://codehs.com/uploads/4a5d77b25a87438bcd8e24ee9c56b6db">
+   <span>Edge Surf</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/tap%20tap%20shots/"
+   data-img="https://codehs.com/uploads/1ddf13518a0aeeea4fe178d68aafc2ab">
+   <span>Tap Tap Shots</span>
+</a>
+
+
+
+<div class="section-title-wrapper">
+    <h2 class="section-title">Shooter Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+  <!--shooter-->
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/timeshooter1/"
+   data-img="https://codehs.com/uploads/a1e3d33a2bb61aa37d26d4f49507b3b9">
+   <span>Time Shooter 1</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/timeshooter2/"
+   data-img="https://codehs.com/uploads/ac70004314a0dc7a0fa211c90bb8f238">
+   <span>Time Shooter 2</span>
+</a>
+
+<a class="game-card"
+   data-url="time-shooter-3/"
+   data-img="https://codehs.com/uploads/f22a8240577b2edaeca40d6ac4cff3b2">
+   <span>Time Shooter 3</span>
+</a>
+
+<a class="game-card"
+   data-url="superhot/"
+   data-img="https://codehs.com/uploads/ec6748b15a4664bec7f5faaddfb76a0f">
+   <span>Superhot</span>
+</a>
+
+<a class="game-card"
+   data-url="spacehuggers/"
+   data-img="https://codehs.com/uploads/bea520fabdd4a5bcddcee726c4d0c136">
+   <span>Spacehuggers</span>
+</a>
+
+<a class="game-card"
+   data-url="pacman-fps/"
+   data-img="https://codehs.com/uploads/2ed18b3c5a6d7f3e873cd806b975743f">
+   <span>Pacman FPS</span>
+</a>
+
+<a class="game-card"
+   data-url="getaway-shootout/"
+   data-img="https://codehs.com/uploads/2bc037cad6ed2559015c7a999c613fe6">
+   <span>Getaway Shootout</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/zombocalypse/"
+   data-img="https://codehs.com/uploads/41e8feb9e364e78d8d4ae8599ef74d0c">
+   <span>Zombocalypse</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/gunmayhem2/"
+   data-img="https://codehs.com/uploads/12eb447a715f7d1f44d9bc86ded99a8b">
+   <span>Gun Mayhem 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/pixelshooter/"
+   data-img="https://codehs.com/uploads/55cf2493059a2c428725d0b66efb2e0c">
+   <span>Pixel Shooter</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/pixel%20gun%20apocalypse%202/"
+   data-img="https://codehs.com/uploads/0267b144679ee308af4453fc6d780e71">
+   <span>Pixel Gun Apocalypse 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://www.stat2games.sites.grinnell.edu/games/tigersampling.html"
+   data-img="https://codehs.com/uploads/2aaf98ee5b55ea60c4897246d7195f4f">
+   <span>Tiger Sniper</span>
+</a>
+
+<a class="game-card"
+   data-url="https://andregaertner.com/game/"
+   data-img="https://codehs.com/uploads/03c31769dbde5e8cba31ad6fbbe2907e">
+   <span>Survival Shooting</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/gunspin/"
+   data-img="https://codehs.com/uploads/a360e66d1b0fba74b74864821ec09b26">
+   <span>Gunspin</span>
+</a>
+
+    <!--<a class="game-card" data-url="zombocalypse/">Zombocalypse</a>-->
+
+
+
+
+<!--skill-->
+<div class="section-title-wrapper">
+    <h2 class="section-title">Skill Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+   <a class="game-card"
+   data-url="newgames/stackCode/"
+   data-img="https://codehs.com/uploads/845cafec57088e002741dd73ccfd854a">
+   <span>Stack</span>
+</a>
+
+<a class="game-card"
+   data-url="1v1lol/"
+   data-img="https://codehs.com/uploads/3ce93510a5ae885afe54b152f6c9f1a1">
+   <span>1v1.LOL</span>
+</a>
+
+<a class="game-card"
+   data-url="core-ball/"
+   data-img="https://codehs.com/uploads/d2ab4923a58728b61a19aef19f66d4be">
+   <span>Core Ball</span>
+</a>
+
+<a class="game-card"
+   data-url="helicopter/"
+   data-img="https://codehs.com/uploads/b4b1b06c419b85a67d438435233d1e00">
+   <span>Helicopter</span>
+</a>
+
+<a class="game-card"
+   data-url="worlds-hardest-game-2/"
+   data-img="https://codehs.com/uploads/463eb4eb18c6460cff471464c076046c">
+   <span>World’s Hardest Game 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/worlds%20hardest%20game%203/"
+   data-img="https://codehs.com/uploads/08916644199c47287b24f464a0f5e998">
+   <span>World’s Hardest Game 3</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlygames5.deno.dev/html/clash%20royale/"
+   data-img="https://codehs.com/uploads/46d00c8566a3afbdaacad43779aa24ab">
+   <span>Clash Royale</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/little%20alchemy%202/"
+   data-img="https://codehs.com/uploads/59f1800a92cbbc6a2684f69c558d3d17">
+   <span>Little Alchemy 2</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/burrito%20bison/"
+   data-img="https://codehs.com/uploads/8e68705e6cc41d2fc9ae0d43623ac138">
+   <span>Burrito Bison</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/block%20shooter%20frenzy/"
+   data-img="https://codehs.com/uploads/7d6e0127b38d54a30f7f6227289e7040">
+   <span>Block Shooter Frenzy</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/bit-planes/"
+   data-img="https://codehs.com/uploads/fbdf94acf8f07650c7b4787b9247af06">
+   <span>Bit Planes</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/subway-surfers-ny/"
+   data-img="https://codehs.com/uploads/897e08c54fa88ce7d0808572794ee13b">
+   <span>Subway Surfers NY</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/yohoho/"
+   data-img="https://codehs.com/uploads/8547d5a66e1cc6d60d8d9f5736a6c544">
+   <span>YoHoHo</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/snowrider3d/"
+   data-img="https://codehs.com/uploads/6bae2d8cf83e8439b2d9313eab05258a">
+   <span>Snow Rider 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://personal.denison.edu/~lalla/314f20/juntao/index.html"
+   data-img="https://codehs.com/uploads/8b88a6ecf6d7f63fea5312b648931a41">
+   <span>3D Ball Roll</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/stickmanclimb/"
+   data-img="https://codehs.com/uploads/8e4ec246f7b98c42d733d61b3882572f">
+   <span>Stickman Climb</span>
+</a>
+
+<a class="game-card"
+   data-url="short-life-2/"
+   data-img="https://codehs.com/uploads/7ede3911eb3186f35bba9e4eb788af29">
+   <span>Short Life 2</span>
+</a>
+
+<a class="game-card"
+   data-url="HexGL/"
+   data-img="https://codehs.com/uploads/d7ca207278b22023c0ae33230d85bc58">
+   <span>HexGL</span>
+</a>
+
+<a class="game-card"
+   data-url="backflip-dive-3d/"
+   data-img="https://codehs.com/uploads/2f88abd3be718ff219eb6aa0727b8c0c">
+   <span>Backflip Dive 3D</span>
+</a>
+
+
+
+<!--end--->
+
+<!--Casual Games-->
+<div class="section-title-wrapper">
+    <h2 class="section-title">Casual Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+        <a class="game-card"
+   data-url="cubefield/"
+   data-img="https://codehs.com/uploads/261b4247dc7082588be7efe51a93363b">
+   <span>Cubefield</span>
+</a>
+
+<a class="game-card"
+   data-url="newgames/candycrush/"
+   data-img="https://codehs.com/uploads/2f9864b60ba0f8f259f9c3e6593749b2">
+   <span>Candy Crush</span>
+</a>
+
+<a class="game-card"
+   data-url="newgames/2048code/"
+   data-img="https://codehs.com/uploads/ded9c45a3dca5cdd18d311ef03913c5f">
+   <span>2048</span>
+</a>
+
+<a class="game-card"
+   data-url="bitlife/"
+   data-img="https://codehs.com/uploads/915c7bf725a0192572b9eb42babd879d">
+   <span>BitLife</span>
+</a>
+
+<a class="game-card"
+   data-url="newgames/spacebarclicker/"
+   data-img="https://codehs.com/uploads/636d3c1c18be08c4d10315c573fad44e">
+   <span>Spacebar Clicker</span>
+</a>
+
+<a class="game-card"
+   data-url="crossyroad/"
+   data-img="https://codehs.com/uploads/76f8a9bdbf899c17a65087237b251977">
+   <span>Crossy Road</span>
+</a>
+
+<a class="game-card"
+   data-url="line-rider/"
+   data-img="https://codehs.com/uploads/30670568f63260935bac1eba4ed517b3">
+   <span>Line Rider</span>
+</a>
+
+<a class="game-card"
+   data-url="sand-game/"
+   data-img="https://codehs.com/uploads/b8dabb7e6e00162b1f5deb68ce8d3690">
+   <span>Sand Game</span>
+</a>
+
+<a class="game-card"
+   data-url="pacman/"
+   data-img="https://codehs.com/uploads/172e3755fa23ab19edfc9005be8c05fa">
+   <span>Pac-Man</span>
+</a>
+
+<a class="game-card"
+   data-url="https://diguifi-games.s3-us-west-2.amazonaws.com/FPS_Survival_build/index.html"
+   data-img="https://codehs.com/uploads/7cd8e6b968ec5d8768e3082670df8985">
+   <span>The Wanderer</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/block%20blast/"
+   data-img="https://codehs.com/uploads/c95158b207aa88e133fac8180dc491fe">
+   <span>Block Blast</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/bottle%20flip/"
+   data-img="https://codehs.com/uploads/526bfb43e83ef1d6426add9b941aeb89">
+   <span>Bottle Flip 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/ovo%203d/"
+   data-img="https://codehs.com/uploads/41c007ff3834d27be8c99487712e272d">
+   <span>OVO 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/ovo/"
+   data-img="https://codehs.com/uploads/aa0e264b7eda553c17620c29faaf18f4">
+   <span>OVO</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/slope/"
+   data-img="https://codehs.com/uploads/32650ca9e859c96f08a882fcb461f687">
+   <span>Slope</span>
+</a>
+
+<a class="game-card"
+   data-url="https://shrikalyanika.org/play/?id=184"
+   data-img="https://codehs.com/uploads/0b9fb80ee85c5b330e98d1bce7e39ff8">
+   <span>Cookie Clicker (Alt)</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/stickman-hook/"
+   data-img="https://codehs.com/uploads/3098d9d4c58f42216bf98dfa1ae466bb">
+   <span>Stickman Hook</span>
+</a>
+
+<a class="game-card"
+   data-url="vex3/"
+   data-img="https://codehs.com/uploads/5a0ae18a69987b7d8e862ede4a2644c0">
+   <span>Vex 3</span>
+</a>
+
+<a class="game-card"
+   data-url="vex4/"
+   data-img="https://codehs.com/uploads/1c2e495c8ff14f6d645461c51a504a30">
+   <span>Vex 4</span>
+</a>
+
+<a class="game-card"
+   data-url="vex5/"
+   data-img="https://codehs.com/uploads/f0ceb52ca3fed9e4eb4bb57a2679f7ff">
+   <span>Vex 5</span>
+</a>
+
+<div class="section-title-wrapper">
+    <h2 class="section-title">Fighting Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+   <!--Fighting Games-->
+   <a class="game-card"
+   data-url="stick-archers-battle/"
+   data-img="https://codehs.com/uploads/e5a8ebf7011af45c2190b89e2003fe87">
+   <span>Stick Archers</span>
+</a>
+
+<a class="game-card"
+   data-url="stickwar/"
+   data-img="https://codehs.com/uploads/83c5d1485bfb030620656646efc57fd1">
+   <span>Stick War</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/superfighters/"
+   data-img="https://codehs.com/uploads/29326d9c580c58e9dd51bf0ffa71b56d">
+   <span>Superfighters</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/hobo/"
+   data-img="https://codehs.com/uploads/b37dc20f5f69575ed87beefc273809a4">
+   <span>Hobo</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/stick%20duel%20battle/"
+   data-img="https://codehs.com/uploads/b737111c6e970c14f059c2be65a1cb56">
+   <span>Stick Duel Battle</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/stick%20fighters/"
+   data-img="https://codehs.com/uploads/522fb466bdb9cdd625178e3b083c55ad">
+   <span>Stick Fighters</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/stickman%20bike/"
+   data-img="https://codehs.com/uploads/4a1b27ff9ca9a60f78946f4bee1e0994">
+   <span>Stickman Bike</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/ragdoll%20hit/"
+   data-img="https://codehs.com/uploads/4ed4fa0cb7b058d28133d97c2db56632">
+   <span>Ragdoll Hit</span>
+</a>
+
+<a class="game-card"
+   data-url="Stickman-Survival/"
+   data-img="https://codehs.com/uploads/4f84cb7d6faf0b025d67db19ac41eaa0">
+   <span>Stickman Survival</span>
+</a>
+
+      <!--puzzle/logic-->
+  <div class="section-title-wrapper">
+    <h2 class="section-title">Puzzle and Logic Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+   <a class="game-card"
+   data-url="https://valsamisphysics.com/sidescroller/index.html"
+   data-img="https://codehs.com/uploads/6feec683ec149a41a7ddee22939b6b73">
+   <span>Ngon</span>
+</a>
+
+<a class="game-card"
+   data-url="one-screen-run-2/"
+   data-img="https://codehs.com/uploads/170da48ffa3c857c84f6dc14c287971c">
+   <span>One Screen Run 2</span>
+</a>
+
+<a class="game-card"
+   data-url="one-screen-run/"
+   data-img="https://codehs.com/uploads/d67da5a4b2312b160aa25cda974f4b39">
+   <span>One Screen Run</span>
+</a>
+
+<a class="game-card"
+   data-url="https://copilot.lindberghschools.ws/projectstorage/CopilotTheVG/index.html"
+   data-img="https://codehs.com/uploads/df8716d31b4c59e998dd30df1170ef18">
+   <span>Co-Pilot</span>
+</a>
+
+<a class="game-card"
+   data-url="https://a6936-20267301.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20267301/course%20files/baldi%20basics/index.html?download=1&inline=1"
+   data-img="https://codehs.com/uploads/99bb5cbd0202ae252854206e6f12c3fe">
+   <span>Baldi’s Basics</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/stealingthediamond/"
+   data-img="https://codehs.com/uploads/2226cb6d66c0b4f7c772edc9ddaf32e5">
+   <span>Stealing the Diamond</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/sandtris/"
+   data-img="https://codehs.com/uploads/b23117bc8e0afe80d8725355f436311a">
+   <span>Sandtris</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/save%20the%20doge/"
+   data-img="https://codehs.com/uploads/c80cbf8beb9d51ecbd6483939e416905">
+   <span>Save the Doge</span>
+</a>
+
+<a class="game-card"
+   data-url="OfflineParadise/"
+   data-img="https://codehs.com/uploads/1b298720b1dd8127b9757db8cb2a9230">
+   <span>Offline Paradise</span>
+</a>
+
+<a class="game-card"
+   data-url="bloonstd/"
+   data-img="https://codehs.com/uploads/ef501870a2e9ba41194eab8d232cd7e9">
+   <span>Bloons TD</span>
+</a>
+
+<a class="game-card"
+   data-url="bloxors/"
+   data-img="https://codehs.com/uploads/f265947081841b740f9563f21b17b0b0">
+   <span>Bloxorz</span>
+</a>
+
+<a class="game-card"
+   data-url="angry-birds/"
+   data-img="https://codehs.com/uploads/465ec8f579dfd2542fdb8bffc958b74d">
+   <span>Angry Birds</span>
+</a>
+
+<a class="game-card"
+   data-url="breakout/"
+   data-img="https://codehs.com/uploads/abc106686cbcaa9cd2f67f1355a8c12b">
+   <span>Breakout</span>
+</a>
+
+
+    
+    
+    <!--Simulators-->
+    <div class="section-title-wrapper">
+    <h2 class="section-title">Simulators</h2>
+    <div class="section-barrier"></div>
+  </div>
+  <a class="game-card"
+   data-url="https://heavenlydog3.deno.dev/html/highway%20bike%20simulator/"
+   data-img="https://codehs.com/uploads/1d1eaecf7af4f835e7f957aaf42a38b8">
+   <span>Highway Bike Simulator</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenly2.deno.dev/html/ultimate%20offroad%20simulator/"
+   data-img="https://codehs.com/uploads/d585f64c2cbc3999c69f81322792f5bd">
+   <span>Ultimate Offroad Simulator</span>
+</a>
+
+<a class="game-card"
+   data-url="https://eurascension.s3.us-east-2.amazonaws.com/index.html"
+   data-img="https://codehs.com/uploads/1c2f6c77d939b34042c3d4dba60cbfd0">
+   <span>Aircraft Simulator</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/webretro/"
+   data-img="https://codehs.com/uploads/ae9e6de59bb0b0c0726ac2c5889c216c">
+   <span>WebRetro</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/win11/"
+   data-img="https://codehs.com/uploads/42fe2bd142034317898e5fa58a8fcbb4">
+   <span>Windows 11</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/ruffle/"
+   data-img="https://codehs.com/uploads/15abb9c99d727d4ad28042bd93e419ed">
+   <span>Ruffle Emulator</span>
+</a>
+
+<a class="game-card"
+   data-url="newgames/fluidsim/"
+   data-img="https://codehs.com/uploads/a61b147e8338719904ab2b7fcc193e8b">
+   <span>Fluid Simulator</span>
+</a>
+
+<a class="game-card"
+   data-url="emulator-js/"
+   data-img="https://codehs.com/uploads/8f16f0855fc4381fb7dff7ef2b288293">
+   <span>Emulator JS</span>
+</a>
+
+<a class="game-card"
+   data-url="soundboard/"
+   data-img="https://codehs.com/uploads/e35a7e40f05182f15515fa538d91b0c7">
+   <span>Soundboard</span>
+</a>
+
+
+    <!--<a class="game-card" data-url="tap/">Tap</a>-->
+    
+
+    
+   
     <!-- <a class="game-card" data-url="backrooms/">Backrooms</a> -->
     <!-- <a class="game-card" data-url="baldis-basics/">Baldi's Basics</a> -->
-    <a class="game-card" data-url="bitlife/">Bitlife</a>
-    <a class="game-card" data-url="bloonstd/">Bloonstd</a>
-    <a class="game-card" data-url="bloxors/">Bloxors</a>
-    <a class="game-card" data-url="breakout/">Breakout</a>
-    <a class="game-card" data-url="cars-simulator/">Cars Simulator</a>
+    
+
     <!-- <a class="game-card" data-url="chromedino/">Chrome Dino</a> -->
-    <a class="game-card" data-url="clean-up-io/">Clean Up</a>
-    <a class="game-card" data-url="core-ball/">Core Ball</a>
-    <a class="game-card" data-url="crossyroad/">Crossy Road</a>
-    <a class="game-card" data-url="cubefield/">Cubefield</a>
-    <a class="game-card" data-url="death-run-3d/">Death Run</a>
-    <a class="game-card" data-url="draw-the-hill/">Draw The Hill</a>
+
     <!-- <a class="game-card" data-url="duck-life-treasurehunt/">Duck Life</a> -->
-    <a class="game-card" data-url="edge-surf/">Edge Surf</a>
-    <a class="game-card" data-url="emulator-js/">Emulator JS</a>
-    <a class="game-card" data-url="evilglitch/">Evil Glitch</a>
-    <a class="game-card" data-url="factoryballsforever/">Factory Balls</a>
-    <a class="game-card" data-url="flappy-2048/">Flappy 2048</a>
-    <a class="game-card" data-url="flappybird/">Flappy Bird</a>
-    <a class="game-card" data-url="geodash-2/">Geodash</a>
-    <a class="game-card" data-url="geometry_jump_sketchy/">Geometry Jump</a>
-    <a class="game-card" data-url="getaway-shootout/">Getaway Shootout</a>
-    <a class="game-card" data-url="golf/">Golf</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/gunspin/">Gunspin</a>
-    <a class="game-card" data-url="helicopter/">Helicopter</a>
-    <!-- <a class="game-card" data-url="jetpack/">Jetpack</a> -->
+    
+    
+    <!--REFLEX GAMES-->
+<div class="section-title-wrapper">
+    <h2 class="section-title">Reflex Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+      <a class="game-card"
+   data-url="death-run-3d/"
+   data-img="https://codehs.com/uploads/9e924145fd77d44dcc1f9105cbeb2256">
+   <span>Death Run 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="evilglitch/"
+   data-img="https://codehs.com/uploads/9e924145fd77d44dcc1f9105cbeb2256">
+   <span>Evil Glitch</span>
+</a>
+
+<a class="game-card"
+   data-url="flappy-2048/"
+   data-img="https://codehs.com/uploads/85dcae55b8630a317ac22bb9203bbead">
+   <span>Flappy 2048</span>
+</a>
+
+<a class="game-card"
+   data-url="flappybird/"
+   data-img="https://codehs.com/uploads/520b2b67c9aae3bd623d11e1a4dcbdb2">
+   <span>Flappy Bird</span>
+</a>
+
+<a class="game-card"
+   data-url="geodash-2/"
+   data-img="https://codehs.com/uploads/13c22fe795d58e735c61df946354f106">
+   <span>GeoDash</span>
+</a>
+
+<a class="game-card"
+   data-url="geometry_jump_sketchy/"
+   data-img="https://codehs.com/uploads/bd38feb774ca0107b6556a0153f26bb1">
+   <span>Geometry Jump</span>
+</a>
+
+<a class="game-card"
+   data-url="paperio2/"
+   data-img="https://codehs.com/uploads/6b6c31ade868401e8f2c088b2e73966d">
+   <span>Paper.io 2</span>
+</a>
+
+<a class="game-card"
+   data-url="run3/"
+   data-img="https://codehs.com/uploads/ddb02a53d5fce59d3405405f774fc0cc">
+   <span>Run 3</span>
+</a>
+
+<a class="game-card"
+   data-url="papery-planes/"
+   data-img="https://codehs.com/uploads/2b17874d4736139b252f947eeafdd098">
+   <span>Papery Planes</span>
+</a>
+
+<a class="game-card"
+   data-url="tunnel-rush/"
+   data-img="https://codehs.com/uploads/3b3c2731a7c8ff7c1f644e45444447ac">
+   <span>Tunnel Rush</span>
+</a>
+
+<a class="game-card"
+   data-url="rolly-vortex/"
+   data-img="https://codehs.com/uploads/3f502cfa8277d264e6c210d83e41e772">
+   <span>Rolly Vortex</span>
+</a>
+
+<a class="game-card"
+   data-url="draw-the-hill/"
+   data-img="https://codehs.com/uploads/f38137d18cb1ebb2d553148ce57c84a2">
+   <span>Draw the Hill</span>
+</a>
+
+    
+    <!-- <a class="game-card" data-url="newgames/run/">Run</a> -->
+    <!-- <a class="game-card" data-url="https://thegamesq2.deno.dev/slope/slope.html">Hole.io</a> -->
+
+<!--Entertaining and Interesting games-->
+<div class="section-title-wrapper">
+    <h2 class="section-title">Entertaining Games</h2>
+    <div class="section-barrier"></div>
+  </div>
+        <a class="game-card"
+   data-url="clean-up-io/"
+   data-img="https://codehs.com/uploads/eeee2955a313adffa08bd439ae6d10b4">
+   <span>Clean Up.io</span>
+</a>
+
+<a class="game-card"
+   data-url="factoryballsforever/"
+   data-img="https://codehs.com/uploads/35a8d407a875cc5d0f40f46dd7b5ab82">
+   <span>Factory Balls</span>
+</a>
+
+<a class="game-card"
+   data-url="https://kids.hidabroot.org/Games/BlastyShooting/"
+   data-img="https://codehs.com/uploads/f2a888248df6a817ad58f6d78d0f0437">
+   <span>Blasty Shooting</span>
+</a>
+
+<a class="game-card"
+   data-url="stormthehouse2/"
+   data-img="https://codehs.com/uploads/751653c709bcd1da97db365aca0526ce">
+   <span>Storm the House 2</span>
+</a>
+
+<a class="game-card"
+   data-url="temple-run-2/"
+   data-img="https://codehs.com/uploads/d9d39798da046f63d421f6cec3a1dae2">
+   <span>Temple Run 2</span>
+</a>
+
+<a class="game-card"
+   data-url="waterworks/"
+   data-img="https://codehs.com/uploads/653bc6bfc5465548867e41c9cdef41dc">
+   <span>Waterworks</span>
+</a>
+
+<a class="game-card"
+   data-url="newgames/paperio3d/"
+   data-img="https://codehs.com/uploads/45db1a1599aabcef7b38f9ab29a5b6ee">
+   <span>Paper.io 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://pointerpointer.com/"
+   data-img="https://codehs.com/uploads/0363592ed85ca812ea25882f5f9248c7">
+   <span>Pointer Game</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlygames5.deno.dev/html/Steal%20a%20Brainrot/"
+   data-img="https://codehs.com/uploads/049c79eaef0010825d8b1e8a34d98125">
+   <span>Steal a Brainrot</span>
+</a>
+
+<a class="game-card"
+   data-url="https://a6936-20350029.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20350029/course%20files/index.html?download=1&inline=1"
+   data-img="https://codehs.com/uploads/a630c34df53ecc60d3842f33e5d2fd33">
+   <span>2 Player Slope</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/gdlite/"
+   data-img="https://codehs.com/uploads/b8ebc501fadd974379f6281f6f6ddc0c">
+   <span>GD Lite</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/geometryrash/"
+   data-img="https://codehs.com/uploads/143ff126edcb708e30b8cdec2ae8496f">
+   <span>Geometry Rash</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/jetpackjoyride/"
+   data-img="https://codehs.com/uploads/a1c4d6705741f57385e7c05765d7a9ea">
+   <span>Jetpack Joyride</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlyselenite.deno.dev/lazyjump3d/"
+   data-img="https://codehs.com/uploads/1c49cfe6d83ce4ba651374c47cc2509e">
+   <span>Lazy Jump 3D</span>
+</a>
+
+<a class="game-card"
+   data-url="https://heavenlygames5.deno.dev/html/Scary%20Teacher%203D/"
+   data-img="https://codehs.com/uploads/a3682e538f8bb4667b6a94f8e997049e">
+   <span>Scary Teacher 3D</span>
+</a>
+
+       
+       
+        <!--<a class="game-card" data-url="https://heavenlyselenite.deno.dev/cookieclicker/">cookieclicker</a>-->
+
+     <!-- <a class="game-card" data-url="jetpack/">Jetpack</a> -->
     <!-- <a class="game-card" data-url="/justfall/">Just Fall</a>
     <a class="game-card" data-url="/learntofly2/">Learn To Fly</a> -->
-    <a class="game-card" data-url="line-rider/">Line Rider</a>
-    <a class="game-card" data-url="moto-x3m-2/">Moto X3M</a>
-    <a class="game-card" data-url="one-screen-run-2/">One Screen 2</a>
-    <a class="game-card" data-url="one-screen-run/">One Screen</a>
-    <a class="game-card" data-url="pacman-fps/">Pacman FPS</a>
-    <a class="game-card" data-url="pacman/">Pacman</a>
-    <a class="game-card" data-url="paperio2/">Paperio 2</a>
-    <a class="game-card" data-url="papery-planes/">Papery Planes</a>
-    <a class="game-card" data-url="rolly-vortex/">Rolly Vortex</a>
-    <!-- <a class="game-card" data-url="rooftop-snipers/">Rooftop Snipers</a> -->
-    <a class="game-card" data-url="run3/">Run3</a>
-    <a class="game-card" data-url="sand-game/">Sand Game</a>
-    <a class="game-card" data-url="scrapmetal/">Scrapmetal</a>
-    <a class="game-card" data-url="short-life-2/">Short Life</a>
-    <!-- <a class="game-card" data-url="smashkarts/">Smash Karts</a> -->
-    <a class="game-card" data-url="soundboard/">Soundboard</a>
-    <a class="game-card" data-url="spacehuggers/">Spacehuggers</a>
-    <a class="game-card" data-url="stick-archers-battle/">Stick Archers</a>
-    <!-- <a class="game-card" data-url="stickclimb/">Stick Climb</a> -->
-    <a class="game-card" data-url="stickwar/">Stick War</a>
-    <a class="game-card" data-url="stormthehouse2/">Storm House</a>
-    <a class="game-card" data-url="superhot/">Superhot</a>
-    <a class="game-card" data-url="swerve/">Swerve</a>
-    <a class="game-card" data-url="temple-run-2/">Temple Run</a>
-    <a class="game-card" data-url="time-shooter-3/">Time Shooter</a>
-    <a class="game-card" data-url="tunnel-rush/">Tunnel Rush</a>
-    <a class="game-card" data-url="vex3/">Vex3</a>
-    <a class="game-card" data-url="vex4/">Vex4</a>
-    <a class="game-card" data-url="vex5/">Vex5</a>
-    <a class="game-card" data-url="waterworks/">Waterworks</a>
-    <a class="game-card" data-url="worlds-hardest-game-2/">World's Hardest Game 2</a>
-    <a class="game-card" data-url="zombocalypse/">Zombocalypse</a>
-    <a class="game-card" data-url="newgames/paperio3d/">Paperio3D</a>
-    <!-- <a class="game-card" data-url="newgames/run/">Run</a> -->
-    <a class="game-card" data-url="https://valsamisphysics.com/sidescroller/index.html">Ngon</a>
-    <a class="game-card" data-url="https://www.stat2games.sites.grinnell.edu/games/raceradvanced22.html">Racer</a>
-    <a class="game-card" data-url="https://pointerpointer.com/">Pointer Game</a>
-    <!-- <a class="game-card" data-url="https://kids.hidabroot.org/Games/Rollingball/">Slope 2</a> -->
-    <a class="game-card" data-url="https://eurascension.s3.us-east-2.amazonaws.com/index.html">Aircraft Sim</a>
-    <a class="game-card" data-url="https://copilot.lindberghschools.ws/projectstorage/CopilotTheVG/index.html">Co Pilot</a>
+      <!-- <a class="game-card" data-url="rooftop-snipers/">Rooftop Snipers</a> -->
+ <!-- <a class="game-card" data-url="https://kids.hidabroot.org/Games/Rollingball/">Slope 2</a> -->
     <!-- <a class="game-card" data-url="https://home.adelphi.edu/~ju21229/assets/terrain_html/Terrain.html">Terrain</a> -->
     <!-- <a class="game-card" data-url="https://www.drivingskillsforlife.com/media/games/vr2pc/sub/roundabout/index.html">Driving Sim</a> -->
-    <a class="game-card" data-url="https://personal.denison.edu/~lalla/314f20/juntao/index.html">3D Ball Roll</a>
-    <a class="game-card" data-url="https://andregaertner.com/game/">Survival Shooting</a>
-    <a class="game-card" data-url="https://diguifi-games.s3-us-west-2.amazonaws.com/FPS_Survival_build/index.html">The Wanderer</a>
-    <a class="game-card" data-url="https://kids.hidabroot.org/Games/BlastyShooting/">Blasty Shooting</a>
-    <a class="game-card" data-url="https://williamhoza.com/text/?t=wow%20playing%20games?">Particle Sim</a>
-    <a class="game-card" data-url="https://www.stat2games.sites.grinnell.edu/games/racekart.html">Race Kart</a>
-    <!-- <a class="game-card" data-url="https://thegamesq2.deno.dev/slope/slope.html">Hole.io</a> -->
-    <a class="game-card" data-url="https://heavenlygames5.deno.dev/html/City%20Car%20Driving%20Stunt%20Master/">Stunt Driving</a>
-    <a class="game-card" data-url="https://heavenlygames5.deno.dev/html/Steal%20a%20Brainrot/">Steal a Brainrot</a>
-    <a class="game-card" data-url="https://heavenlygames5.deno.dev/html/clash%20royale/">Clash Royale</a>
-    <!-- <a class="game-card" data-url="https://sigma2.wasmer.app/html/Scary%20Teacher%203D/">Scary Teacher 3D</a> -->
-    <a class="game-card" data-url="https://a6936-19417927.cluster7.canvas-user-content.com/courses/6936~1010708/files/6936~19417927/course%20files/index.html%20tre?download=1&inline=1">Retro Bowl</a>
-    <a class="game-card" data-url="https://www.stat2games.sites.grinnell.edu/games/tigersampling.html">Tiger Sniper</a>
-    <a class="game-card" data-url="https://a6936-20267301.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20267301/course%20files/baldi%20basics/index.html?download=1&inline=1">Baldi's Basics</a>
-    <a class="game-card" data-url="https://a6936-20350029.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20350029/course%20files/index.html?download=1&inline=1">2 Player Slope</a>
-    <a class="game-card" data-url="https://shrikalyanika.org/play/?id=184">Cookie Clicker (Alt)</a>
-    <a class="game-card" data-url="/CARGAME/">Car Game</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/block%20blast/">Block Blast</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/bottle%20flip/">Bottle Flip</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/footballbros/">Football Bros</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/highway%20bike%20simulator/">Highway Bike Simulator</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/little%20alchemy%202/">Little Alchemy 2</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/new%20polytrack/">Poly Track</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/ovo%203d/">OVO 3D</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/pixel%20gun%20apocalypse%202/">Pixel Gun Apocalypse 2</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/ragdoll%20hit/">Ragdoll Hit</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/rocket%20soccer%20durbey/">Rocket Soccer Derby</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/sandtris/">Sandtris</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/save%20the%20doge/">Save the Doge</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/soccer%20skills%20euro%20cup/">Soccer Skills Euro Cup</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/stick%20duel%20battle/">Stick Duel Battle</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/stick%20fighters/">Stick Fighters</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/stickman%20bike/">Stickman Bike</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/top%20speed%20racing%203d/">Top Speed Racing 3D</a>
-    <a class="game-card" data-url="https://heavenlydog3.deno.dev/html/worlds%20hardest%20game%203/">World's Hardest Game 3</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/basketbros.io/">basketbros.io</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/basket%20legend%202020/">basketballlegends.2020</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/burrito%20bison/">burritobison.io</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/cannon%20basketball/">cannonbasketball</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/block%20shooter%20frenzy/">blockshooterfrenzy</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/ultimate%20offroad%20simulator/">offroadsimulator</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/pixelshooter/">pixelshooter</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/superfighters/">superfighters</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/top%20speed%203d/">topspeed3D</a>
-    <a class="game-card" data-url="https://heavenly2.deno.dev/html/tap%20tap%20shots/">tap-tap-shots</a>
- <a class="game-card" data-url="https://heavenlyselenite.deno.dev/moto/">motox3m</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/hobo/">hobo</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/1on1soccer/">1on1soccer</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/2drocketleague/">2drocketleague</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/basketbros/">basketbros</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/bit-planes/">bit-planes</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/cluster-rush/">cluster-rush</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/cookieclicker/">cookieclicker</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/drifthunters/">drifthunters</a>
-<!-- <a class="game-card" data-url="https://heavenlyselenite.deno.dev/flappyplane/">flappyplane</a> -->
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/gdlite/">gdlite</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/geometryrash/">geometryrash</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/gunmayhem2/">gunmayhem2</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/jetpackjoyride/">jetpackjoyride</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/lazyjump3d/">lazyjump3d</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/motox3m-pool/">motox3m-pool</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/motox3m-spooky/">motox3m-spooky</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/ovo/">ovo</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/retrobowlcollege/">retrobowlcollege</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/rocketleague/">rocketleague</a>
-<!-- <a class="game-card" data-url="https://heavenlyselenite.deno.dev/ruffle/">ruffle emulator</a> -->
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/russiancardriver/">russiancardriver</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/slope/">slope</a>
-<!-- <a class="game-card" data-url="https://heavenlyselenite.deno.dev/slope3/">slope3</a> -->
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/snowrider3d/">snowrider3d</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/stealingthediamond/">stealingthediamond</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/stickman-hook/">stickman-hook</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/stickmanclimb/">stickmanclimb</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/subway-surfers-ny/">subway-surfers-ny</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/timeshooter1/">timeshooter1</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/timeshooter2/">timeshooter2</a>
+   
+    
+    
+    <!-- <a class="game-card" data-url="smashkarts/">Smash Karts</a> -->
+    <!-- <a class="game-card" data-url="stickclimb/">Stick Climb</a> -->
+
+    
+
+ 
+    
+    
+
+
+
+    
+    
+    
+ 
+<!--<a class="game-card" data-url="https://heavenlyselenite.deno.dev/cluster-rush/">cluster-rush</a>-->
+
+
+ <!--<a class="game-card" data-url="https://heavenlyselenite.deno.dev/slope3/">slope3</a> -->
+
 <!-- <a class="game-card" data-url="https://heavenlyselenite.deno.dev/watermelongame/">watermelongame</a> -->
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/webretro/">webretro</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/win11/">win11</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/yohoho/">yohoho</a>
-<a class="game-card" data-url="https://heavenlyselenite.deno.dev/zombocalypse/">zombocalypse</a> 
+
 
 </section>
 </div>
@@ -427,8 +1326,8 @@ footer { margin:30px 0; opacity:0.6; font-size:0.9rem; }
 <!-- Game Overlay for playing -->
 <div id="gameOverlay">
     <div id="gameControls">
-        <button id="backBtn">Back</button>
-        <button id="fullscreenBtn">Fullscreen</button>
+        <button id="backBtn">Back to Games Page</button>
+        <button id="fullscreenBtn">Re-Fullscreen Page</button>
     </div>
     <iframe id="gameFrame"></iframe>
 </div>
@@ -446,6 +1345,11 @@ cloakBtn.onclick = async () => {
 
     // Initialize games after cloak
     initGameScripts();
+};
+fullscreenBtn.onclick = async () => {
+    await document.documentElement.requestFullscreen();
+
+   
 };
 
 function initGameScripts() {
@@ -482,10 +1386,7 @@ function initGameScripts() {
         document.body.style.overflow = "";
     };
 
-    fullscreenBtn.onclick = () => {
-        overlay.classList.add("css-fullscreen");
-        overlay.focus();
-    };
+  
 
     window.addEventListener("keydown", (e) => {
         if (e.key === "`" && overlay.classList.contains("css-fullscreen")) {
@@ -518,5 +1419,5 @@ function initGameScripts() {
 }
 </script>
 
-</body>
-</html>
+
+</body></html>
